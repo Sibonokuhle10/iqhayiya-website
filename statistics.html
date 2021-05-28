@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MY WEBSITE</title>
+<style>
+body{
+                background-color: yellow;
+                color: black;
+                
+
+            }
+            .dropbtn {
+                background-color: #48d1cc;
+                color: white;
+                padding: 16px;
+                border: none;
+                cursor: pointer;
+
+            }
+            .dropdown{
+                float: right;
+                position: relative;
+                display: inline-block;
+
+            }
+            .dropdown-contect{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                right: 0;
+                            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px  16px;
+                text-decoration: none;
+                display: block;
+                float: right;
+                background-color: blueviolet;
+            }                
+            .dropdown-content:hover{
+                background-color: #f1f1f1;
+            }
+            .show{
+                display: block;
+            }
+            
+            h2{
+                text-align: center;
+                font-size: 2rem;
+                font-style: italic;
+                font-weight: bold;
+            }
+            .img{
+                text-align: left;
+                border-radius: 95%;
+                margin-top: 0%;
+                margin-bottom: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            #footer{
+                text-align: center;
+                font-weight: bolder;
+                margin-bottom:5px;
+                margin-top: 95px;
+                font-size: 2rem;
+                font-style: italic;
+            }
+            a {text-decoration: none;
+            }
+</style>
+
+
+
+
+</head>
+<body>
+    
+        
+        <div id="myDropdown"class="dropdown-content">
+        <a href="index.html"style="font-size:2rem">HOME</a>
+         <a href="about.html"style="font-size:2rem">ABOUT</a>
+        <a href="statistics.html"style="font-size:2rem">STATISTICS</a>
+         <a href="contact.html"style="font-size:2rem">CONTACT</a>
+      
+         </div>
+        </div>
+         
+    <img src="iqhayiya.jpg"width="100px"height="100px">
+<h2>STATISTICS OF PASS RATE PER GRADE</h2>
+
+    <br><br><center>
+    <id class="main img">
+    <img src="download.jpg"width="800px"height="500px">
+    </id>
+</center>
+
+
+
+  <footer id="footer" style="font-weight: boldS;">C O P Y R I G H T:   D I N I S O  S I B O N O K U H L E</footer>
+
+
+
+
+
+  <script>
+
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toogle("show");
+    }
+    window.onclick = function(event ) {
+        if(!event.target.matches('.dropbtn')){
+            var dropdowns = document.getElementClassName("dropdown-content");
+            var i;
+            for(i=0; i < dropdowns.lenght;i++){
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+       </script>
+
+</body>
+</html>

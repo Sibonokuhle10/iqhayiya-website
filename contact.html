@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MY WEBSITE</title>
+<style>
+body{
+                background-color: yellow;
+                color: black;
+                text-align: center;
+
+            }
+            .dropbtn {
+                background-color: #48d1cc;
+                color: white;
+                padding: 16px;
+                border: none;
+                cursor: pointer;
+
+            }
+            .dropdown{
+                float:right;
+                position: relative;
+                display: inline-block;
+
+            }
+            .dropdown-contect{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                right: 0;
+                            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px  16px;
+                text-decoration: none;
+                display: block;
+                float: right;
+                background-color: blueviolet;
+            }   
+         
+           
+            .show{
+                display: block;
+            }
+            
+          
+            
+            .img{
+                float: left;
+                border-radius: 95%;
+                margin-top: 0px;
+                margin-bottom: 100px;
+            }
+
+            #footer{
+                text-align: center;
+                font-weight: bolder;
+                margin-bottom: 5px;
+                margin-top: 50px;
+                font-size: 2rem;
+                font-style: italic;
+
+
+            }
+
+            .contact-form{
+                align: center;
+                box-shadow: 0 0 4px 0rgba(0,0,0,0.5);
+                margin: 50px;
+                width: 350px;
+                align-items: center;
+                border-style: solid;
+                margin-left: 45%;
+            }
+            .contact-form h2{
+                background-color: #ccc;
+                margin-top: 0px;
+                padding: 10px;
+
+            }
+            .contact-form input{
+                display: block;
+                width: 90%;
+                margin: 10px auto;
+                padding: 10px;
+            }
+            .contact-form textarea{
+                width: 90%;
+                margin: 5px auto;
+                padding: 10px;
+                height: 80px;
+
+            }
+            .submit-btn{
+                cursor: pointer;
+                width: 150px !important;
+                margin-left: 180px !important;
+            }
+           /* .g-recaptcha{
+                margin: 10px 20px;
+            }*/
+            .status{
+                font-size: 15px;
+            }
+            .status span{
+                color: red;
+            }
+           
+            input[type=text],select,textarea{
+                width: 300px;
+                padding: 12px;
+                border: 1 px solid #ccc;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            p{
+                font-style: italic;
+                font-weight: bold;
+                text-align: left;
+                margin-top: 10%;
+                text-align: center;
+                margin-left: 15%;
+                font-size: 1rem;
+            }
+            h2{
+                text-align: center;
+                font-size: 2rem;
+                font-style: italic;
+                text-decoration-line: underline;
+            }
+            a{text-decoration: none;
+            display: inline-block;
+            }
+
+
+</style>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+
+
+
+</head>
+<body>
+    
+    <div class="dropdown">
+       
+        <div id="myDropdown"class="dropdown-content">
+        <a href="index.html"style="font-size:2rem">HOME</a>
+         <a href="about.html"style="font-size:2rem">ABOUT</a>
+        <a href="statistics.html"style="font-size:2rem">STATISTICS</a>
+         <a href="contact.html"style="font-size:2rem">CONTACT</a>
+      
+         </div>
+        </div>
+        <a target="_blank"href="iqhayiya.jpg"></a>
+    <id class="img">
+    <img src="iqhayiya.jpg"width="100px"height="100px">
+    </id>
+    
+
+<p>
+    
+    SCHOOL STATUS : OPEN<br><br>
+    
+    EMAIL : IQHAYIYASECONDARYSCHOOL@GMAIL.COM<br><br>
+    
+    FACEBOOK : IQHAYIYA.SECONDARYSCHOOL.<br><br>
+    </p>
+    <div class="contact-form" style="" style="text-align: center;">
+<form action="https://formspree.io/f/mknkovkz"method="POST">
+    <input type="text"name="name"placeholder="Your Name"required>
+    <input type="text"name="Phone"placeholder="Phone No"required>
+    <input type="email"name="Email"placeholder="Your Email"required>
+    <textarea name="message"placeholder="Your Message"required></textarea>
+ 
+   
+</address>
+
+
+<label for="Recommendations">Recommendations :</label><br>
+<textarea id="Subject"name="Subject"placeholder="Recommendations..."style="width: 300px;">
+</textarea><br>
+<input type="submit"value="Submit"class="fb9">
+<hr style="border: 5 solid spx;">
+<div class="g-recaptcha" data-sitekey="6LdUDe0aAAAAAPID77CUvI9K7D0LM0Tb-JkTWx8L"method="POST"></div>
+</form>
+
+<?php
+if(iset($_post['submit']))
+{
+    $user_name =$_POST['name'];
+    $phone = $_POST['phone'];
+    $User_email=$POST['email'];
+    $User_message=$_POST['message'];
+    $ emai_from 'noreply'@juniorkuhlediniso@gmail.com;
+    $ email_subject = "New form Submission";
+    $ email_body = "Name:$User_Name.\n".
+    "Phone No:$Phone.\n". 
+    "email id :$User_email.\". 
+    "User_message:$User_message.\n";
+    $to_email = "sibonokuhle.diniso@younglings.africa";
+    $headers = "from:$email_from\r\n";
+    $headers. = "Reply-To:$User_email\r\n";
+    $secretkey ="6LdUDe0aAAAAAPID77CUvI9K7D0LM0Tb-JkTWx8L";
+    $responseKey = $_POST[g-recaptcha-response];
+    $user IP = $SEVER['REMOTE_ADDR']url ="https://www.google.com/recaptcha"/api/siteverify;
+    $url="https://www.google.com/recaptcha/api/siteverify?secret=secretkey&response =responseKey&remote ip"
+    $ response =file_get_contents($url);
+    $response =json_decode($response);
+    if($response success){
+        email($to_email, $email_subject,$email_body, $headers);
+    }
+    else{
+
+    }
+
+
+}
+?>
+</div>
+</div>
+    <footer id="footer">C O P Y R I G H T:   D I N I S O  S I B O N O K U H L E</footer>
+
+    <script>
+function myFunction() {
+        document.getElementById("myDropdown").classList.toogle("show");
+    }
+    window.onclick = function(event ) {
+        if(!event.target.matches('.dropbtn')){
+            var dropdowns = document.getElementClassName("dropdown-content");
+            var i;
+            for(i=0; i < dropdowns.lenght;i++){
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+
+
+
+    </script>
+</body>
+
+</html>

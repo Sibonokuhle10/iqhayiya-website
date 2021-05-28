@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MY WEBSITE</title>
+<style>
+  body{
+                background-color: yellow;
+                color: black;
+                
+
+            }
+            
+            
+            .dropbtn {
+                background-color: #48d1cc;
+                color: white;
+                padding: px;
+                border: none;
+                cursor: pointer;
+
+            }
+        
+            .dropdown{
+                float:right;
+                position: relative;
+                display: inline-block;
+
+            }
+            .dropdown-contect{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                right: 0;
+                            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px  16px;
+                text-decoration: none;
+                display: block;
+                float: right;
+                background-color: blueviolet;
+            }                
+            .dropdown-content:hover{
+                background-color: #f1f1f1;
+            }
+            .show{
+                display: block;
+            }
+            .img{
+                align-items: top;
+                border-radius: 95%;
+                margin-top: 0%;
+                margin-bottom: 100px;
+            }
+            #footer{
+                text-align: center;
+                font-weight: bolder;
+                margin-bottom: 0px;
+                margin-top: 20%;
+                font-size: 2rem;
+                font-style: italic;
+
+
+
+            }
+            p{
+                font-weight: bold;
+                text-align: center;
+                margin-top: 150px;
+            }
+            a{text-decoration: none;}
+</style>
+
+
+</head>
+<body>
+        <div id="myDropdown"class="dropdown-content">
+        <a href="index.html"style="font-size:2rem">HOME</a>
+         <a href="about.html"style="font-size:2rem">ABOUT</a>
+        <a href="statistics.html"style="font-size:2rem">STATISTICS</a>
+         <a href="contact.html"style="font-size:2rem">CONTACT</a>
+      
+         </div>
+        </div>
+    <id class="img">
+    <img src="iqhayiya.jpg"width="100px"height="100px">
+    </id>
+
+    <br><br>
+    <div>
+<p>WELCOME TO IQHAYIYA SECONDARY SCHOOL ABOUT PAGE, IQHAYIYA SECONDARY SCHOOL 
+IS A VALID , REGISTERED AND PROSPERIOUS SCHOOL UNDER THE LEADERSHIP OF 
+A.T MBAVA , 28 TEACHERS, AND  883 LEANERS<br><br>
+
+
+WE ARE PROUD TO CREATE EDUCATIONAL RESOURCES THTA WILL BE USED AT EACH
+STEP OF A CHILD'S  JOURNEY<br><br>
+
+BACK THEN TEACHERS  WERE USING PRECIOUS TIME AND ENERGY CREATING THEIR OWN
+TEACHING EVENTS/LESSONS, THEY WERE WORKING IN ISOLATION TOO, 
+CONSTANTLY REINVENTING THE WHEEL BY MAKING INDIVIDUALS RESOURCES 
+FOR IDENTICAL SUBJECTS AND LESSONS.<br><br>
+
+BUT THANK TO DEMOCRATIC LEADERS NOW ALL THAT BURDEN PERSIHED FROM OUR 
+.TEACHERS SHOLDERS AND THANKS TO TECHNOLOGY EVERY THING IS DUABLE EASLY.</p> 
+</div>
+
+
+
+    <footer id="footer">C O P Y R I G H T:   D I N I S O  S I B O N O K U H L E</footer>
+
+<script>
+    
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toogle("show");
+    }
+    window.onclick = function(event ) {
+        if(!event.target.matches('.dropbtn')){
+            var dropdowns = document.getElementClassName("dropdown-content");
+            var i;
+            for(i=0; i < dropdowns.lenght;i++){
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+    
+        </script>
+</body>
+</html>
